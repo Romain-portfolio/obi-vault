@@ -1,0 +1,42 @@
+.unlockVaultForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unlockVaultForm input {
+    margin-bottom: 20px;
+}
+
+.lockButton {
+    position: relative;
+}
+
+.success .lockButton {
+    color: var(--active-color);
+}
+
+.lockButton::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    box-shadow: 0 0 0 0 var(--active-color);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.success .lockButton::after {
+    animation: unlock-ring 500ms ease-out;
+}
+
+@keyframes unlock-ring {
+    from {
+        opacity: 1;
+        box-shadow: 0 0 0 0 var(--active-color);
+    }
+    to {
+        opacity: 0;
+        box-shadow: 0 0 0 14px var(--active-color);
+    }
+}

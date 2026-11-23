@@ -1,0 +1,21 @@
+.iconButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lg {
+    padding: 0.8rem 1.6rem;
+}
+
+.md {
+    padding: 0.5rem 0.9rem;
+}
+
+.sm {
+    padding: 0.4em 0.6rem;
+}
+
+.xs {
+    padding: 0.2rem 0.3rem;
+}

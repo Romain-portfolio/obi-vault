@@ -1,0 +1,65 @@
+.errorPanel {
+    /* Annule les styles par défaut d'un popover */
+    inset: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    overflow: visible;
+
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    translate: -50% 0;
+    z-index: 1000;
+    width: min(420px, calc(100vw - 32px));
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    /* Le panneau ne bloque pas les clics, seules les notifications les reçoivent */
+    pointer-events: none;
+}
+
+.errorPanel:empty {
+    display: none;
+}
+
+.errorNotification {
+    pointer-events: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 8px 10px 14px;
+    border-left: 3px solid var(--danger-color);
+    background-color: var(--button-background);
+    color: var(--text-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    font-size: 14px;
+    line-height: 20px;
+    animation: error-appear 200ms ease-out;
+}
+
+.errorNotification > span {
+    flex: 1;
+    padding-top: 4px;
+}
+
+@keyframes error-appear {
+    from {
+        opacity: 0;
+        translate: 0 -8px;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .errorNotification {
+        animation-duration: 1ms;
+    }
+}

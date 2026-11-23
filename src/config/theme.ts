@@ -1,0 +1,23 @@
+export type ThemeName = 'dark' | 'light';
+export type AppBackgroundColor =
+    | 'red'
+    | 'orange'
+    | 'amber'
+    | 'yellow'
+    | 'lime'
+    | 'green'
+    | 'emerald'
+    | 'teal'
+    | 'cyan'
+    | 'sky'
+    | 'blue'
+    | 'indigo'
+    | 'purple'
+    | 'fuchsia'
+    | 'pink'
+    | 'rose'
+    | 'slate'
+    | 'gray'
+    | 'zinc'
+    | 'neutral'
+    | 'stone';

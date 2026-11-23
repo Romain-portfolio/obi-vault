@@ -1,0 +1,78 @@
+.createVaultForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createVaultForm > p {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.passwordRules {
+    width: 100%;
+    margin-bottom: 15px;
+    list-style-type: none;
+    padding-left: 78px;
+    font-size: 14px;
+}
+
+.passwordRule {
+    color: var(--inactive-color);
+}
+
+.passwordRule.valid {
+    color: var(--success-color);
+}
+
+.passwordRule > div {
+    display: flex;
+    align-items: center;
+}
+
+.passwordRule > div > span {
+    margin-left: 10px;
+}
+
+.warning {
+    color: var(--warning-color);
+}
+
+.createVaultForm input {
+    margin-bottom: 15px;
+}
+
+.lockButton {
+    position: relative;
+}
+
+.success .lockButton {
+    color: var(--active-color);
+}
+
+.lockButton::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    box-shadow: 0 0 0 0 var(--active-color);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.success .lockButton::after {
+    animation: unlock-ring 500ms ease-out;
+}
+
+@keyframes unlock-ring {
+    from {
+        opacity: 1;
+        box-shadow: 0 0 0 0 var(--active-color);
+    }
+    to {
+        opacity: 0;
+        box-shadow: 0 0 0 14px var(--active-color);
+    }
+}

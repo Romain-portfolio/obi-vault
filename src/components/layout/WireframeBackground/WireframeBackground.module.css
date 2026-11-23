@@ -1,0 +1,226 @@
+.canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.red {
+    background: radial-gradient(120% 90% at 30% 20%, #450a0a 0%, #230505 55%, #0e0202 100%) #230505;
+    color: #f87171;
+}
+
+.orange {
+    background: radial-gradient(120% 90% at 30% 20%, #431407 0%, #220a04 55%, #0d0401 100%) #220a04;
+    color: #fb923c;
+}
+
+.amber {
+    background: radial-gradient(120% 90% at 30% 20%, #451a03 0%, #230d02 55%, #0e0501 100%) #230d02;
+    color: #fbbf24;
+}
+
+.yellow {
+    background: radial-gradient(120% 90% at 30% 20%, #422006 0%, #211003 55%, #0d0601 100%) #211003;
+    color: #facc15;
+}
+
+.lime {
+    background: radial-gradient(120% 90% at 30% 20%, #1a2e05 0%, #0d1703 55%, #050901 100%) #0d1703;
+    color: #a3e635;
+}
+
+.green {
+    background: radial-gradient(120% 90% at 30% 20%, #16340a 0%, #0a1c05 55%, #040b02 100%) #0a1c05;
+    color: rgb(124 255 58);
+}
+
+.emerald {
+    background: radial-gradient(120% 90% at 30% 20%, #022c22 0%, #011611 55%, #000907 100%) #011611;
+    color: #34d399;
+}
+
+.teal {
+    background: radial-gradient(120% 90% at 30% 20%, #042f2e 0%, #021817 55%, #010909 100%) #021817;
+    color: #2dd4bf;
+}
+
+.cyan {
+    background: radial-gradient(120% 90% at 30% 20%, #083344 0%, #041a22 55%, #020a0e 100%) #041a22;
+    color: #22d3ee;
+}
+
+.sky {
+    background: radial-gradient(120% 90% at 30% 20%, #082f49 0%, #041825 55%, #02090f 100%) #041825;
+    color: #38bdf8;
+}
+
+.blue {
+    background: radial-gradient(120% 90% at 30% 20%, #172554 0%, #0c132a 55%, #050711 100%) #0c132a;
+    color: #60a5fa;
+}
+
+.indigo {
+    background: radial-gradient(120% 90% at 30% 20%, #1e1b4b 0%, #0f0e26 55%, #06050f 100%) #0f0e26;
+    color: #818cf8;
+}
+
+.purple {
+    background: radial-gradient(120% 90% at 30% 20%, #1d0b36 0%, #0f061c 55%, #08030f 100%) #0f061c;
+    color: rgb(157 107 255);
+}
+
+.fuchsia {
+    background: radial-gradient(120% 90% at 30% 20%, #4a044e 0%, #250227 55%, #0f0110 100%) #250227;
+    color: #e879f9;
+}
+
+.pink {
+    background: radial-gradient(120% 90% at 30% 20%, #500724 0%, #280412 55%, #100107 100%) #280412;
+    color: #f472b6;
+}
+
+.rose {
+    background: radial-gradient(120% 90% at 30% 20%, #4c0519 0%, #26030d 55%, #0f0105 100%) #26030d;
+    color: #fb7185;
+}
+
+.slate {
+    background: radial-gradient(120% 90% at 30% 20%, #0f172a 0%, #020617 55%, #01030b 100%) #020617;
+    color: #94a3b8;
+}
+
+.gray {
+    background: radial-gradient(120% 90% at 30% 20%, #111827 0%, #030712 55%, #010309 100%) #030712;
+    color: #9ca3af;
+}
+
+.zinc {
+    background: radial-gradient(120% 90% at 30% 20%, #18181b 0%, #09090b 55%, #040405 100%) #09090b;
+    color: #a1a1aa;
+}
+
+.neutral {
+    background: radial-gradient(120% 90% at 30% 20%, #171717 0%, #0a0a0a 55%, #040404 100%) #0a0a0a;
+    color: #a3a3a3;
+}
+
+.stone {
+    background: radial-gradient(120% 90% at 30% 20%, #1c1917 0%, #0c0a09 55%, #050404 100%) #0c0a09;
+    color: #a8a29e;
+}
+
+:root[data-theme='light'] .red {
+    background: radial-gradient(120% 90% at 30% 20%, #fef2f2 0%, #fee2e2 55%, #fecaca 100%) #fee2e2;
+    color: rgb(220 38 38 / 0.7);
+}
+
+:root[data-theme='light'] .orange {
+    background: radial-gradient(120% 90% at 30% 20%, #fff7ed 0%, #ffedd5 55%, #fed7aa 100%) #ffedd5;
+    color: rgb(234 88 12 / 0.7);
+}
+
+:root[data-theme='light'] .amber {
+    background: radial-gradient(120% 90% at 30% 20%, #fffbeb 0%, #fef3c7 55%, #fde68a 100%) #fef3c7;
+    color: rgb(217 119 6 / 0.7);
+}
+
+:root[data-theme='light'] .yellow {
+    background: radial-gradient(120% 90% at 30% 20%, #fefce8 0%, #fef9c3 55%, #fef08a 100%) #fef9c3;
+    color: rgb(202 138 4 / 0.7);
+}
+
+:root[data-theme='light'] .lime {
+    background: radial-gradient(120% 90% at 30% 20%, #f7fee7 0%, #ecfccb 55%, #d9f99d 100%) #ecfccb;
+    color: rgb(101 163 13 / 0.7);
+}
+
+:root[data-theme='light'] .green {
+    background: radial-gradient(120% 90% at 30% 20%, #f0fdf4 0%, #dcfce7 55%, #bbf7d0 100%) #dcfce7;
+    color: rgb(22 163 74 / 0.7);
+}
+
+:root[data-theme='light'] .emerald {
+    background: radial-gradient(120% 90% at 30% 20%, #ecfdf5 0%, #d1fae5 55%, #a7f3d0 100%) #d1fae5;
+    color: rgb(5 150 105 / 0.7);
+}
+
+:root[data-theme='light'] .teal {
+    background: radial-gradient(120% 90% at 30% 20%, #f0fdfa 0%, #ccfbf1 55%, #99f6e4 100%) #ccfbf1;
+    color: rgb(13 148 136 / 0.7);
+}
+
+:root[data-theme='light'] .cyan {
+    background: radial-gradient(120% 90% at 30% 20%, #ecfeff 0%, #cffafe 55%, #a5f3fc 100%) #cffafe;
+    color: rgb(8 145 178 / 0.7);
+}
+
+:root[data-theme='light'] .sky {
+    background: radial-gradient(120% 90% at 30% 20%, #f0f9ff 0%, #e0f2fe 55%, #bae6fd 100%) #e0f2fe;
+    color: rgb(2 132 199 / 0.7);
+}
+
+:root[data-theme='light'] .blue {
+    background: radial-gradient(120% 90% at 30% 20%, #eff6ff 0%, #dbeafe 55%, #bfdbfe 100%) #dbeafe;
+    color: rgb(37 99 235 / 0.7);
+}
+
+:root[data-theme='light'] .indigo {
+    background: radial-gradient(120% 90% at 30% 20%, #eef2ff 0%, #e0e7ff 55%, #c7d2fe 100%) #e0e7ff;
+    color: rgb(79 70 229 / 0.7);
+}
+
+:root[data-theme='light'] .violet {
+    background: radial-gradient(120% 90% at 30% 20%, #f5f3ff 0%, #ede9fe 55%, #ddd6fe 100%) #ede9fe;
+    color: rgb(124 58 237 / 0.7);
+}
+
+:root[data-theme='light'] .purple {
+    background: radial-gradient(120% 90% at 30% 20%, #faf5ff 0%, #f3e8ff 55%, #e9d5ff 100%) #f3e8ff;
+    color: rgb(147 51 234 / 0.7);
+}
+
+:root[data-theme='light'] .fuchsia {
+    background: radial-gradient(120% 90% at 30% 20%, #fdf4ff 0%, #fae8ff 55%, #f5d0fe 100%) #fae8ff;
+    color: rgb(192 38 211 / 0.7);
+}
+
+:root[data-theme='light'] .pink {
+    background: radial-gradient(120% 90% at 30% 20%, #fdf2f8 0%, #fce7f3 55%, #fbcfe8 100%) #fce7f3;
+    color: rgb(219 39 119 / 0.7);
+}
+
+:root[data-theme='light'] .rose {
+    background: radial-gradient(120% 90% at 30% 20%, #fff1f2 0%, #ffe4e6 55%, #fecdd3 100%) #ffe4e6;
+    color: rgb(225 29 72 / 0.7);
+}
+
+/* Gris : en dehors du cercle chromatique */
+
+:root[data-theme='light'] .slate {
+    background: radial-gradient(120% 90% at 30% 20%, #f8fafc 0%, #f1f5f9 55%, #e2e8f0 100%) #f1f5f9;
+    color: rgb(71 85 105 / 0.7);
+}
+
+:root[data-theme='light'] .gray {
+    background: radial-gradient(120% 90% at 30% 20%, #f9fafb 0%, #f3f4f6 55%, #e5e7eb 100%) #f3f4f6;
+    color: rgb(75 85 99 / 0.7);
+}
+
+:root[data-theme='light'] .zinc {
+    background: radial-gradient(120% 90% at 30% 20%, #fafafa 0%, #f4f4f5 55%, #e4e4e7 100%) #f4f4f5;
+    color: rgb(82 82 91 / 0.7);
+}
+
+:root[data-theme='light'] .neutral {
+    background: radial-gradient(120% 90% at 30% 20%, #fafafa 0%, #f5f5f5 55%, #e5e5e5 100%) #f5f5f5;
+    color: rgb(82 82 82 / 0.7);
+}
+
+:root[data-theme='light'] .stone {
+    background: radial-gradient(120% 90% at 30% 20%, #fafaf9 0%, #f5f5f4 55%, #e7e5e4 100%) #f5f5f4;
+    color: rgb(87 83 78 / 0.7);
+}
